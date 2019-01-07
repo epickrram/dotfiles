@@ -1,1 +1,5 @@
-alias go='gnome-open $1'
+alias gs='git status'
+alias gp='git push'
+alias gc='git commit -m '
+alias ga='git add '
+alias g='./gradlew'
