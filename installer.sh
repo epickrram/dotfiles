@@ -7,7 +7,7 @@ sudo apt update
 sudo apt install -y tmux openjdk-8-jdk openjdk-8-dbg git vim xfce4 vagrant virtualbox libssl-dev tree \
 linux-tools-common linux-tools-generic openjdk-11-jdk openjdk-11-dbg openjdk-11-source htop
 
-sudo apt install -y xfce4 xfce4-cpugraph-plugin xfce4-indicator-plugin
+sudo apt install -y xfce4 xfce4-cpugraph-plugin
 
 mkdir -p $HOME/Programs
 mkdir -p $HOME/Code
