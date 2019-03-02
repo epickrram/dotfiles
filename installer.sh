@@ -5,10 +5,14 @@
 sudo add-apt-repository ppa:openjdk-r/ppa
 sudo apt update
 sudo apt install -y tmux openjdk-8-jdk openjdk-8-dbg git vim xfce4 vagrant virtualbox libssl-dev tree \
-linux-tools-common linux-tools-generic openjdk-11-jdk openjdk-11-dbg openjdk-11-source htop
+linux-tools-common linux-tools-generic openjdk-11-jdk openjdk-11-dbg openjdk-11-source htop 
 
-sudo apt install -y xfce4 xfce4-cpugraph-plugin
+sudo apt install -y xfce4 xfce4-cpugraph-plugin xfce4-battery-plugin xmonad suckless-tools dzen2 xmobar
 
 mkdir -p $HOME/Programs
 mkdir -p $HOME/Code
 sudo usermod -G libvirt -a $USER
+
+curl https://sh.rustup.rs -sSf | sh
+
+echo "export _JAVA_AWT_WM_NONREPARENTING=1" >> $HOME/.profile
