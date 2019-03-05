@@ -6,5 +6,6 @@ import XMonad.Util.EZConfig(additionalKeys)
 import XMonad.Hooks.SetWMName
 import System.IO
 
-main = do
-    xmonad $ defaultConfig
+main = xmonad =<< xmobar wmConfig
+
+wmConfig = def { modMask = mod4Mask }
