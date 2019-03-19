@@ -8,4 +8,5 @@ import System.IO
 
 main = xmonad =<< xmobar wmConfig
 
-wmConfig = def { modMask = mod4Mask }
+wmConfig = def { modMask = mod4Mask 
+                ,focusFollowsMouse = False }
